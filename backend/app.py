@@ -2,12 +2,10 @@ from flask import Flask, request, jsonify
 from util import *
 from chatbot import *
 from langchain_community.document_loaders import TextLoader
-import threading
-import requests
+from flask_cors import CORS
 
 app = Flask(__name__)
-
-lock = threading.Lock()
+cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 app.debug = True
 

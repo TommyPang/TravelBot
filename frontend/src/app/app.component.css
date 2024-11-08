@@ -1,0 +1,93 @@
+.chatbot-page {
+  background-color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.chat-container {
+  border: 1px solid #ccc;
+  background: #f1757e;
+  padding: 10px;
+  height: 75vh;
+  overflow-y: auto;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.chat-message {
+  padding: 5px 10px;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+button {
+  margin-left: 1%;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.chat-message {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.message-avatar {
+  margin-right: 10px;
+}
+
+.message-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.message-content {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.message-text {
+  margin: 0;
+  font-size: 16px;
+}
+
+.message-time {
+  margin: 0;
+  font-size: 12px;
+  color: #999;
+}
+
+.depression_measurement {
+  text-align: center;
+}
+
+.chat-input {
+  text-align: center;
+}
