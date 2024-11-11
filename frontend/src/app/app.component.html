@@ -1,27 +1,21 @@
-<div class="chatbot-page">
-  <h1>树山旅游咨询</h1>
-
-  <div class="chat-container">
-    <div class="chat-message" *ngFor="let message of messages">
-      <ng-container *ngIf="message.from_user">
-        <div class="message-avatar" >
-          <img src="../assets/user_icon.png" alt="User Avatar" />
-        </div>
-      </ng-container>
-
-      <ng-container *ngIf="!message.from_user">
-        <div class="message-avatar" >
-          <img src="../assets/org_logo.png" alt="Organization Avatar" />
-        </div>
-      </ng-container>
-
-      <div class="message-content">
-        <p class="message-text">{{ message.content }}</p>
-      </div>
-    </div>
-  </div>
-  <div class="chat-input">
-    <input type="text" [(ngModel)]="newMessage" placeholder="输入您的询问..." (keydown.enter)="send_message()">
-    <button (click)="send_message()">发送</button>
-  </div>
+<div>
+  <c-carousel>
+    <c-carousel-indicators></c-carousel-indicators>
+    <c-carousel-inner>
+      <c-carousel-item *ngFor="let slide of slides">
+        <img
+          alt="{{slide.title}}"
+          class="d-block w-100"
+          loading="lazy"
+          src="{{slide.src}}"
+        />
+        <c-carousel-caption class="d-none d-md-block">
+          <h3>{{slide.title}}</h3>
+          <p>{{slide.subtitle}}</p>
+        </c-carousel-caption>
+      </c-carousel-item>
+    </c-carousel-inner>
+    <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+    <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+  </c-carousel>
 </div>

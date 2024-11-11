@@ -70,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "TravelBot:build:production"
+              "buildTarget": "TravelBot:build:production"
             },
             "development": {
-              "browserTarget": "TravelBot:build:development"
+              "buildTarget": "TravelBot:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -81,7 +81,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "TravelBot:build"
+            "buildTarget": "TravelBot:build"
           }
         },
         "test": {

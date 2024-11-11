@@ -4,6 +4,14 @@ import {NgModule} from "@angular/core";
 import {CommonModule} from "@angular/common";
 import {BrowserModule} from "@angular/platform-browser";
 import {FormsModule} from "@angular/forms";
+import {
+  CarouselCaptionComponent,
+  CarouselComponent, CarouselControlComponent,
+  CarouselIndicatorsComponent,
+  CarouselInnerComponent,
+  CarouselItemComponent
+} from "@coreui/angular";
+import {RouterLink} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -13,7 +21,14 @@ import {FormsModule} from "@angular/forms";
     HttpClientModule,
     CommonModule,
     BrowserModule,
-    FormsModule
+    FormsModule,
+    CarouselIndicatorsComponent,
+    CarouselItemComponent,
+    CarouselComponent,
+    CarouselInnerComponent,
+    CarouselControlComponent,
+    CarouselCaptionComponent,
+    RouterLink
   ],
   providers: [],
   bootstrap: [AppComponent]
