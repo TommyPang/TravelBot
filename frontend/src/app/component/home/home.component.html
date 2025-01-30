@@ -1,0 +1,33 @@
+<div class="home-container">
+  <div class="slide-show">
+    <c-carousel class="custom-carousel">
+      <c-carousel-indicators></c-carousel-indicators>
+      <c-carousel-inner>
+        <c-carousel-item *ngFor="let slide of slides">
+          <img
+            [alt]="slide.title"
+            class="d-block w-100"
+            loading="lazy"
+            [src]="slide.src"
+          />
+          <!--<c-carousel-caption class="d-none d-md-block">
+            <h3>{{ slide.title }}</h3>
+          </c-carousel-caption>-->
+        </c-carousel-item>
+      </c-carousel-inner>
+      <c-carousel-control caption="Previous" direction="prev"></c-carousel-control>
+      <c-carousel-control caption="Next" direction="next"></c-carousel-control>
+    </c-carousel>
+  </div>
+  <div class="chatbot-description">
+    <img class="logo" src="../assets/org_logo.png" alt="logo">
+    <div class="text-content">
+      <h1>Get unlimited access to get the travel information about Shushan Village in Suzhou, China!</h1>
+      <p>Explore Shushan Village with our AI-powered travel Q&A site! Get instant answers on attractions, seasonal highlights, and travel tips for a memorable visit.</p>
+      <button cButton color="dark" (click)="toChat()" size="lg">Continue <span>&#8594;</span></button>
+    </div>
+    <span class="powered-by">Powered by Shushan Village</span>
+  </div>
+</div>
+
+

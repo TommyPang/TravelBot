@@ -1,5 +1,5 @@
 <div class="chatbot-page">
-  <h1>树山旅游咨询</h1>
+  <h1>Shushan Village Chatbot</h1>
 
   <div class="chat-container">
     <div class="chat-message" *ngFor="let message of messages">
@@ -21,7 +21,7 @@
     </div>
   </div>
   <div class="chat-input">
-    <input type="text" [(ngModel)]="newMessage" placeholder="输入您的询问..." (keydown.enter)="send_message()">
-    <button (click)="send_message()">发送</button>
+    <input type="text" [(ngModel)]="newMessage" placeholder="Enter here..." (keydown.enter)="send_message()">
+    <button (click)="send_message()">Send</button>
   </div>
 </div>

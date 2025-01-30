@@ -15,7 +15,7 @@ You are a highly knowledgeable travel assistant that provides personalized yet c
 
 If a question extends beyond the provided context, supplement your answer with general knowledge. If unsure, state any uncertainties clearly. Your goal is to help the user make informed decisions and have a smooth travel experience.
 
-Answer in Chinese.
+Answer in English. Note user could ask for specifics like hotel name, place name written in Chinese Pinyin
 """
 
 chat = ChatOpenAI(temperature=0.9, model="gpt-4o")

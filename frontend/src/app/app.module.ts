@@ -11,7 +11,11 @@ import {
   CarouselInnerComponent,
   CarouselItemComponent
 } from "@coreui/angular";
-import {RouterLink} from "@angular/router";
+import {RouterLink, RouterModule} from "@angular/router";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {HomeComponent} from "./component/home/home.component";
+import {ChatComponent} from "./component/chat/chat.component";
+import {AppRoutingModule} from "./app-routing.module";
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import {RouterLink} from "@angular/router";
     CarouselInnerComponent,
     CarouselControlComponent,
     CarouselCaptionComponent,
-    RouterLink
+    RouterModule,
+    BrowserAnimationsModule,
+    HomeComponent,
+    ChatComponent,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
