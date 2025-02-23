@@ -1,9 +1,7 @@
-import wikipediaapi # https://pypi.org/project/Wikipedia-API/
 from CustomDocumentLoader import *
 from langchain_core.documents import Document
 from langchain_experimental.text_splitter import SemanticChunker
 from langchain_openai.embeddings import OpenAIEmbeddings
-import uuid
 import os
 import time
 from dotenv import load_dotenv

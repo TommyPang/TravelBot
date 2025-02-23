@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify
 from util import *
 from chatbot import *
-from langchain_community.document_loaders import TextLoader
 from flask_cors import CORS
 
 app = Flask(__name__)
