@@ -25,7 +25,7 @@ import {Router} from "@angular/router";
     ButtonDirective
   ],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  // styleUrl: './home.component.css'
 })
 export class HomeComponent {
   slides: any[] = new Array(6).fill({ id: -1, src: '', title: '', subtitle: '' });
