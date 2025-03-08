@@ -53,6 +53,7 @@ button {
 }
 
 .message-avatar {
+  flex-shrink: 0; /* Prevents avatars from shrinking */
   margin-right: 10px;
 }
 
@@ -60,6 +61,7 @@ button {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  object-fit: cover; /* Ensures avatar is properly scaled */
 }
 
 .message-content {
@@ -67,6 +69,10 @@ button {
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 80%; /* Ensures message doesn't exceed container */
+  word-wrap: break-word; /* Break long words */
+  overflow-wrap: break-word; /* Ensure long words wrap correctly */
+  white-space: pre-wrap; /* Maintains spacing and ensures long messages wrap */
   display: flex;
   flex-direction: column;
   align-items: flex-start;

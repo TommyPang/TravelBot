@@ -5,13 +5,13 @@
     <div class="chat-message" *ngFor="let message of messages">
       <ng-container *ngIf="message.from_user">
         <div class="message-avatar" >
-          <img src="../assets/user_icon.png" alt="User Avatar" />
+          <img src="assets/user_icon.png" alt="User Avatar" />
         </div>
       </ng-container>
 
       <ng-container *ngIf="!message.from_user">
         <div class="message-avatar" >
-          <img src="../assets/org_logo.png" alt="Organization Avatar" />
+          <img src="assets/org_logo.png" alt="Organization Avatar" />
         </div>
       </ng-container>
 
